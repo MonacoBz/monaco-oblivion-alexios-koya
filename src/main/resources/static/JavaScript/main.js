@@ -25,7 +25,7 @@ boton.addEventListener('click', e => {
         return;
     }
     else if (opcion === "Otros") {
-      fetch("http://localhost:8080/api/consulta",{
+      fetch("/api/consulta",{
         method: 'POST',
         headers: {
           'Content-Type': 'text/plain'
@@ -38,7 +38,7 @@ boton.addEventListener('click', e => {
         const mensaje = json.Mensaje;
         const correcto = json.Correcto;
         if(correcto){
-          fetch("http://localhost:8080/api/analiza", {
+          fetch("/api/analiza", {
             method: 'POST',
             headers: {
               'Content-Type': 'text/plain'
@@ -64,7 +64,7 @@ boton.addEventListener('click', e => {
         }
       })
     } else {
-        fetch(`http://localhost:8080/bdc/busca/${opcion}`, {
+        fetch(`/bdc/busca/${opcion}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'text/plain'
