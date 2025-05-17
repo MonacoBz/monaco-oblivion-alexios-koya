@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAW PHISH: DETECTOR DE POSIBLE PHISHING</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/style.css">
+</head>
+<body>
+    <div id="inicio"></div>
+    <h1>RAW PHISH</h1>
+
+    <div class="bienvenida">
+        <h2>¡Protege tu información personal!</h2>
+            <p>Esta herramienta te ayuda a identificar posibles sitios de phishing que intentan robar tus datos personales o credenciales.</p>
+            <div class="features">
+                <div class="feature">
+                    <span>🔍</span>            
+                     <a href="#info-analiza" title="Haz clic para más info">Analiza URLs sospechosas</a>
+                </div>
+                <div class="feature">
+                    <span>🛡️</span>
+                       <a href="#info-detecta" title="Haz clic para más info">Detecta patrones comunes de phishing</a>                      
+                </div>
+                <div class="feature">
+                    <span>⚡</span>
+                    <a href="#info-resultados" title="Haz clic para más info">Resultados instantáneos</a>
+                </div>
+              
+            </div>
+            <br>
+           <div id="conoce"><a href="#info-extra" title="Conceptos sobre phishing" >Conocer más</a></div>
+            <p class="warning"> Recuerda que ninguna herramienta es 100% infalible</p>
+            <p class="warning"> ¡Siempre verifica antes de ingresar datos sensibles!</p>
+    </div>
+
+    <div class="container">
+        
+        <label >Ingresa una URL:</label>
+        <textarea id="urlInput" placeholder="Ejemplo: https://www.ejemplo.com"></textarea>
+        <button id="b-analizar">Busca patrones maliciosos en tu URL</button>
+        <div id="resultadoURL" style="margin-top: 1em;"></div>
+       
+       <br>
+        <label for="lang">¿De qué tipo de servicio quieres evaluar tu URL?</label>
+        <select name="banco" id="select">
+            <option value="default">Seleccione una opcion</option>
+            <option value="Banco">Bancos</option>
+            <option value="Gobierno">Gobierno</option>
+            <option value="Shopping">Shopping</option>           
+            <option value="Correo">Correo</option>
+            <option value="Otros">Otros</option>           
+            
+        </select>
+
+        <label> Selecciona una opcion segun tu criterio </label>
+
+        <label> 
+            <input type="radio" name="opcion" id="opcion" value="segura"> URL Segura
+        </label>
+        
+        <label> 
+            <input type="radio" name="opcion" id="opcion" value="phishing"> Posible Phishing
+        </label>
+
+        <button id="checkButton">Comprobar URL</button>
+
+        <div id="result" class="result">
+            <h3>Resultado:</h3>
+            <p id="resultText"></p>
+            <p id="coincidenciaText"></p>
+        </div>
+        
+        <p>¿No recuerdas la url?, haz <a href="https://t.onlineexammaker.com/doexam/B0Xed5EmyY2.html" target="_blank" rel="noopener">click aquí</a></p>
+    </div>
+    
+       
+    <div id="info-analiza" class="info">
+        <span>🔍</span> 
+        <h3>Analiza URLs sospechosas</h3>
+        <p>Las URLs sospechosas suelen contener dominios extraños, errores ortográficos o elementos que intentan imitar sitios legítimos. Esta herramienta te ayuda a identificar estos riesgos antes de que hagas clic.</p>
+        <div class="botones-info">
+            <a href="#inicio">Volver al inicio</a>
+            <a href="#info-extra" class="ver-mas">Conocer más</a>
+        </div>
+    </div>
+
+    <div id="info-detecta" class="info">
+         <span>🛡️</span>
+     <h3>Detecta patrones comunes de phishing</h3>
+     <p>El phishing comparte patrones como solicitudes urgentes, enlaces engañosos y formularios falsos. Analizamos estos comportamientos para detectar amenazas con mayor precisión.</p>
+        <div class="botones-info">
+            <a href="#inicio">Volver al inicio</a>
+            <a href="#info-extra" class="ver-mas">Conocer más</a>
+        </div>
+    </div>
+
+    <div id="info-resultados" class="info">
+        <span>⚡</span>
+     <h3>Resultados instantáneos</h3>
+     <p>Nuestro sistema procesa y evalúa las URLs al instante usando análisis optimizados, para que obtengas respuestas claras en segundos sin esperar.</p>
+        <div class="botones-info">
+            <a href="#inicio">Volver al inicio</a>
+        </div>
+    </div>
+<div id="info-extra" class="info">
+    <span>💡</span>
+    <h3>Conceptos clave sobre el phishing</h3>
+    <div class="lluvia-conceptos">
+        <a href="conceptos.html#phishing" class="conceptoVM">🎭 Phishing</a>
+        <a href="conceptos.html#email" class="conceptoVM" >📧 Email falso</a>
+        <a href="conceptos.html#clonados" class="conceptoVM">🌐 Sitios clonados</a>
+        <a href="conceptos.html#credenciales" class="conceptoVM" >🔐 Robo de credenciales</a>
+        <a href="conceptos.html#link" class="conceptoVM" >🔗 Links engañosos</a>
+        <a href="conceptos.html#ingenieria" class="conceptoVM" >🎨 Ingeniería social</a>
+        <a href="conceptos.html#alerta" class="conceptoVM" >⏰ Alerta falsa</a>
+        <a href="conceptos.html#suplantacion" class="conceptoVM">🏦 Suplantación</a>
+        <a href="conceptos.html#robo" class="conceptoVM" >🧾 Robo de datos</a>
+    </div>
+    <div id= "cuestiones" class="cuestion">
+        <p>Prueba tus conocimientos <a href="https://t.onlineexammaker.com/doexam/YngO7PGALZG.html"target="_blank" rel="noopener">aquí</a>
+        </p>
+    </div>
+     <a href="#inicio" class="volver">Volver al inicio</a>
+</div>
+<script src="/JavaScript/main.js"></script>
+</body>
+</html>

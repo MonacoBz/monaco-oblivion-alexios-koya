@@ -1,0 +1,46 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilos del resultado */
+#resultado {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Estilo para los gifs */
+#gif1, #gif2 {
+    margin: 20px 0;
+    max-width: 30%;
+}
+
+/* Enlace de regreso */
+h2 a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}

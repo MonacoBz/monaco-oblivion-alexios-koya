@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+    color: #fff;
+    background-image: url('imagen.jpeg');
+    background-size: auto auto;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;;
+}
+
+.concepto {
+   min-height: 100vh; 
+    background-color: rgba(10, 10, 10, 0.9);
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px); 
+    margin: 0;
+    scroll-margin-top: 0; 
+}
+
+.concepto span{
+   font-size: 4rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.concepto h3 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #b04fff;
+}
+
+.concepto p {
+  font-size: 1.3em;
+  max-width: 800px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.boton-volver {
+  background-color: #cd324c;
+  color: #97ffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #901a30;
+}
+
+@media (max-width: 600px) {
+  .concepto h3 {
+    font-size: 2em;
+  }
+
+  .concepto p {
+    font-size: 1.1em;
+    padding: 0 10px;
+  }
+}
+html {
+    scroll-behavior: auto; 
+}
