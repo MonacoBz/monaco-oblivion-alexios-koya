@@ -23,8 +23,6 @@ contador++;
     if(contador===10){
         boton.innerText="TE LO ADVERTI!!!!!!!!!"
         agregarGifsAlBody();
-        const audio = new Audio("terror.mp3");
-        audio.play().catch((err) => console.error("Error al reproducir el audio:", err));
     }
 })
 function agregarGifsAlBody() {
